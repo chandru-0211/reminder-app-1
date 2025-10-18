@@ -1,0 +1,133 @@
+/* ---------- GENERAL PAGE STYLING ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for forms */
+form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+h1 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 20px;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+label {
+  display: block;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0984e3;
+  box-shadow: 0 0 5px rgba(9, 132, 227, 0.5);
+}
+
+/* ---------- BUTTON STYLING ---------- */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #74b9ff;
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: #0984e3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- CHECKBOX & RADIO ---------- */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* ---------- REMINDER PAGE ---------- */
+.overlay {
+  background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overfull h1 {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container .input-group {
+  margin-bottom: 15px;
+}
+
+#reminderList {
+  list-style: none;
+  padding: 0;
+}
+
+#reminderList li {
+  background: #dfe6e9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#reminderList li:hover {
+  background: #b2bec3;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Reminder App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overfull">
+    <h1>Smart Reminder App</h1>
+
+    <div class="container">
+      <div class="input-group">
+        <label for="reminderText">Reminder</label>
+        <input type="text" id="reminderText" placeholder="Enter your reminder...">
+      </div>
+
+      <div class="input-group">
+        <label for="reminderTime">Reminder Time</label>
+        <input type="datetime-local" id="reminderTime">
+      </div>
+
+      <div class="input-group">
+        <label for="reminderLink">Optional Link</label>
+        <input type="url" id="reminderLink" placeholder="https://example.com">
+      </div>
+
+      <button type="button" onclick="addReminder()">Add Reminder</button>
+
+      <ul id="reminderList"></ul>
+    </div>
+  </div>
+
+  <audio id="alertSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

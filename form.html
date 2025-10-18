@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>My First Webpage</title> <!-- Page title -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="chandru">
+    
+    <form action ="login.html">
+        <div>
+            <label for="username">User Name</label>
+        <input type="name"id="username" placeholder="UserName" required minlength="2">
+            
+        </div>
+        
+        <div>
+            <label for="male" name="gender">Male</label>
+            <input type="radio" name="gender" id="male"
+        </div>
+        <div>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id ="female"
+        </div>
+        <div>
+            <label for="password">Password</label>
+        <input type="password"  id="password" placeholder="PassWord" required minlength="7">
+        </div>
+        <div>
+            <label for="ConfirmPassword">
+                ConfirmPassword 
+            </label>
+            <input type="ConfirmPassword"id="CP" placeholder ="ConfirmPassword" required minlength ="7"
+        </div>
+        <div>
+            <label for="Date of birth">Date of Birth</label>
+            <input type="date" id="dob" maxlength="4" min="1500" max="2100"
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="sms alert">SMS Alert</label>
+            <input type="checkbox" name="sms Alert" id="sms" >
+        </div>
+        <div>
+            <label for="email Alert">Email Alert</label>
+            <input type="checkbox" name="Email Alert"id="Email"
+        </div>
+        <div>
+            <label for="file">Resume</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="about">About</label>
+            <textarea name="about"id ="About" cols="25" rows="10">About me...</textarea>
+        </div>
+        <div>
+            <p> have any questions ?<a href="">contact us</a></p>
+        </div>
+        <button type="submit">Sign up</button>
+        <script src="script.js"></script>
+        
+    </form>  
+</body>
+</html>
+
